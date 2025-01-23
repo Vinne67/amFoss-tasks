@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" >
+  <meta charset="utf-8">
+  <title>Drum Kit</title>
+</head>
+
+<body>
+<audio src="sounds/crash.mp3" id="myAudio"></audio>
+<audio src="sounds/kick-bass.mp3" id="myAudio1"></audio>
+<audio src="sounds/snare.mp3" id="myAudio2"></audio>
+<audio src="sounds/tom-1.mp3" id="myAudio3"></audio>
+<audio src="sounds/tom-2.mp3" id="myAudio4"></audio>
+<audio src="sounds/tom-3.mp3" id="myAudio5"></audio>
+<audio src="sounds/tom-4.mp3" id="myAudio6"></audio>
+  <h1 style="font-family: 'Arial';" id="title">Drum 🥁 Kit</h1>
+  <div class="set">
+    <button style="background-color:lightpink;font-family: 'Times New Roman'; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio()" class="w drum">w</button>
+    <button style="background-color:beige;font-family: Cambria; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio1()" class="a drum">a</button>
+    <button style="background-color:lavender;font-family: cursive; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio2()" class="s drum">s</button>
+    <button style="background-color:linen;font-family:'Gill Sans'; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio3()" class="d drum">d</button>
+    <button style="background-color:honeydew;font-family: serif; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio4()" class="j drum">j</button>
+    <button style="background-color:lightcyan;font-family: Georgia; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio5()" class="k drum">k</button>
+    <button style="background-color:azure;font-family: Impact; box-shadow: 5px 5px 15px rgba(0,0,0,1);" onclick="playMyAudio6()" class="l drum">l</button>
+    <script>
+      function playMyAudio(){
+        document.getElementById("myAudio").play();
+      }
+      function playMyAudio1(){
+        document.getElementById("myAudio1").play();
+      }
+      function playMyAudio2(){
+        document.getElementById("myAudio2").play();
+      }
+      function playMyAudio3(){
+        document.getElementById("myAudio3").play();
+      }
+      function playMyAudio4(){
+        document.getElementById("myAudio4").play();
+      }
+      function playMyAudio5(){
+        document.getElementById("myAudio5").play();
+      }
+      function playMyAudio6(){
+        document.getElementById("myAudio6").play();
+      }
+    </script>
+  </div>
+  
+</body>
+
+</html>
+
